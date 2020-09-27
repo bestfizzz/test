@@ -9,8 +9,13 @@ listmaker=(a1,a2)=>{
         }    
     }
     for(i=0;i<=a1.lenght;i++){
-        if(!(a1[i] in a2)){
-            list.push(a1[i])
+        if(!(a2[i] in a1)){
+            list.push(a2[i])
+    }
+    for(i=0;i<=a1.lenght;i++){
+        if(list[i]===undefined){
+            list.splice(i,1)
+        }
     }
 }
 //2
