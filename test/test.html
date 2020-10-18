@@ -6,19 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div>quiz</div>
-    <div>
+    <div style="font-weight: bold;font-size: xx-large;text-align: center;background-color: #0F5897;">quiz</div>
+    <div id="main">
     <div id="category"></div>
     <div id="difficulty"></div>
     <div id="quiz"></div>
-    <button id='a' onclick="wrong()"></button>
-    <button id='b' onclick="wrong()"></button>
-    <button id='c' onclick="wrong()"></button>
-    <button id='d'></button>
+    <button id='a' name="a"></button>
+    <button id='b' name="b"></button>
+    <button id='c' name="c"></button>
+    <button id='d' name="d"></button>
     </div>
     <style>
     body {
-        text-align: center;
         font-family: "Helvetica", sans-serif;
       }
       h1 {
@@ -36,6 +35,8 @@
         border-radius: 5px;
         border: 1px solid #4791d0;
         padding: 5px 10px 8px 10px;
+        display: block;
+        margin-top: 10px;
       }
       button:hover {
         background-color: #0F5897;
